@@ -57,9 +57,15 @@ button {
 
 /* Momile  288+16+16=320 */
 .container {
-  max-width: 320px;
+  /* max-width: 320px;
   padding: 0 16px;
-  margin: 0 auto;
+  margin: 0 auto; */
+
+  max-width: 320px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Tablet  736+16+16=768 */
@@ -775,6 +781,10 @@ button {
 
 /* #region  ADVATAGES (Section-2) for MOBILE */
 
+.advantages {
+  padding: 96px 0;
+}
+
 .advantages-list {
   display: flex;
 
@@ -783,31 +793,15 @@ button {
   align-content: center;
 
   gap: 72px;
-
-  padding-top: 96px;
-  padding-bottom: 96px;
 }
 
-.advantages-item {
+/* .advantages-item {
   width: 288px;
   height: 120px;
-}
+} */
 
 .advantages-icon {
   display: none;
-
-  /* display: flex;
-    align-items: center;
-    justify-content: center; */
-
-  /* margin: auto 0;
-    padding: 24px 100px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background: #f4f4fd;
-    margin-bottom: 8px; */
 }
 
 .advantages-item-title {
@@ -832,37 +826,27 @@ button {
 /* #region  ADVATAGES (Section-2) for TABLET */
 
 @media screen and (min-width: 768px) {
+  .advantages {
+    padding: 96px 0;
+  }
+
   .advantages-list {
     flex-direction: row;
     flex-wrap: wrap;
 
     column-gap: 24px;
     row-gap: 72px;
-
-    padding-top: 96px;
-    padding-bottom: 96px;
   }
 
   .advantages-item {
+    /* width: calc((100% - 2 * 24px) / 3); */
+
     width: 356px;
-    height: 120px;
+    /* height: 120px; */
   }
 
   .advantages-icon {
     display: none;
-
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
-
-    /* margin: auto 0;
-    padding: 24px 100px;
-    border: 1px solid #8e8f99;
-    border-radius: 4px;
-    width: 264px;
-    height: 112px;
-    background: #f4f4fd;
-    margin-bottom: 8px; */
   }
 
   .advantages-item-title {
@@ -876,8 +860,7 @@ button {
 
 @media screen and (min-width: 1158px) {
   .advantages {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding: 120px 0;
   }
 
   .visually-hidden {
@@ -901,7 +884,8 @@ button {
   }
 
   .advantages-item {
-    width: 264px;
+    /* width: 264px; */
+    width: calc((100% - 3 * 24px) / 4);
   }
 
   .advantages-icon {
@@ -924,6 +908,7 @@ button {
     font-size: 20px;
     line-height: 1.2;
   }
+
   .advantages-item-text {
     font-weight: 400;
   }
@@ -934,8 +919,8 @@ button {
 /* #region  OUR TEAM  (Section-3) for MOBILE */
 
 .team {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding-top: 96px;
+  padding-bottom: 96px;
   background-color: #f4f4fd;
 
   background-position: center;
@@ -1069,7 +1054,16 @@ button {
 
 /* #endregion  OUR TEAM  (Section-3) for TABLET */
 
-/* OUR TEAM  (Section-3) for DESKTOP = for TABLET */
+/* #region  OUR TEAM  (Section-3) for DESKTOP  */
+
+@media screen and (min-width: 1158px) {
+  .team {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+
+/* #endregion  OUR TEAM  (Section-3) for DESKTOP  */
 
 /* #region  OUR PORTFOLIO  (Section-4)  for MOBILE */
 
@@ -1177,8 +1171,8 @@ button {
 
 @media screen and (min-width: 768px) {
   .portfolio {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
   }
 
   .portfolio-list {
@@ -1200,6 +1194,11 @@ button {
 /* #region  OUR PORTFOLIO  (Section-4) for DESKTOP */
 
 @media screen and (min-width: 1158px) {
+  .portfolio {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .portfolio-foto {
     width: 356px;
     height: 300px;
@@ -1217,7 +1216,7 @@ button {
 
   background-position: center;
   max-width: 320px;
-  height: 664px;
+  /* height: 664px; */
   margin: auto;
 }
 
@@ -1258,6 +1257,7 @@ button {
   justify-content: flex-start;
   align-content: center;
   align-items: baseline;
+  width: 584px;
 }
 
 .footer-logo-text {
@@ -1313,7 +1313,7 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  
+
   margin: auto;
   margin-bottom: 72px;
 }
@@ -1395,8 +1395,9 @@ button {
     background-color: #2e2f42;
     background-position: center;
     max-width: 768px;
-    height: 456px;
-    padding: 96px 164px 96px 108px;
+    /* height: 456px; */
+
+    padding: 96px 0;
   }
   .footer-container {
     /* display: flex; */
@@ -1428,16 +1429,14 @@ button {
     width: 264px;
   }
 
-
   .team-icon-list-futer {
     /* margin-right: 80px; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
+
     margin: 0 0;
-    /
   }
 
   /* #region futer Div-3 SABCRIBE */
@@ -1456,12 +1455,10 @@ button {
 /* #region FOOTER for DESKTOP */
 
 @media screen and (min-width: 1440px) {
-  
-  
   .footer {
     background-color: #2e2f42;
-    
-    padding: 100px 159px 100px 156px;
+
+    padding: 100px 0;
     background-position: center;
     max-width: 1440px;
     height: 312px;
@@ -1470,45 +1467,38 @@ button {
 
   .footer-logo-text {
     margin: 0 120px 0 0;
-
   }
-  
-  
+
   .footer-container {
     display: flex;
     align-items: baseline;
+    width: 1158px;
   }
-  
-  .footer-logo-text {
-    margin-right: 120px;
-  }
-  
+
   .footer-container-list-nav {
     padding-right: 692px;
-      padding-left: 120px;
+    padding-left: 120px;
   }
-  
- 
-  
+
   .team-icon-list-futer {
-      margin: 0 80px 0 0;
+    margin: 0 80px 0 0;
   }
-  
+
   /* #endregion Footer */
-  
+
   /* #region futer Div-3 SABCRIBE */
-  
+
   .futer-email-button {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .form {
     display: flex;
     gap: 24px;
   }
-  
+
   .form-input {
     width: 264px;
     height: 40px;
@@ -1518,16 +1508,16 @@ button {
     line-height: 2;
     letter-spacing: 0.04em;
     padding-left: 16px;
-  
+
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     color: #fff;
   }
-  
+
   .form-input::placeholder {
     color: #fff;
   }
-  
+
   .form-button {
     min-width: 165px;
     height: 40px;
@@ -1546,24 +1536,25 @@ button {
     border: none;
     border-radius: 4px;
   }
-  
+
   .submit-icon {
     margin-left: 16px;
   }
-
-
-
-
 }
-
-
 
 /* #endregion FOOTER for DESKTOP */
 
-
-/* #region  MEDIA */
-
 /* #region  MEDIA HERO (Section-1) */
+
+@media screen and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/section1_hero/hero-mobile.jpg');
+  }
+}
 
 @media screen and (min-width: 320px) and (min-resolution: 2x) {
   .hero {
@@ -1575,7 +1566,7 @@ button {
   }
 }
 
-@media screen and (min-width: 768px) and (min-resolution: 1x) {
+@media screen and (min-width: 768px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1595,7 +1586,7 @@ button {
   }
 }
 
-@media screen and (min-width: 1158px) and (min-resolution: 1x) {
+@media screen and (min-width: 1158px) {
   .hero {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -1616,25 +1607,3 @@ button {
 }
 
 /* #endregion  MEDIA HERO (Section-1) */
-
-/* #region  MEDIA  OUR TEAM (Section-3) */
-
-@media screen and (min-width: 320px) and (min-resolution: 1x) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../images/section1_hero/hero-mobile@2x.jpg');
-  }
-}
-
-/* #endregion  MEDIA  OUR TEAM (Section-3) */
-
-/* #endregion  MEDIA */
-
-/* @media screen and (min-width: 320px) and (min-resolution: 2x) {
-  .portfolio-foto {
-    img: url("../images/section4/section4-1@2x.jpg")
-  }
-} */
